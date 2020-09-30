@@ -8,4 +8,6 @@ x=$(((a*b)+c))
 echo "Answer for second formula =$x"
 y=$((c+(a/b)))
 echo "Answer for third formula =$y"
+z=$(((a%b)+c))
+echo "Answer for fourth formula =$z"
 
