@@ -4,3 +4,6 @@ echo "Enter 3 inputs"
 read a b c
 w=$((a+(b*c)))
 echo "Answer for first formula =$w"
+x=$(((a*b)+c))
+echo "Answer for second formula =$x"
+
