@@ -20,12 +20,32 @@ dict[1]=$w
 dict[2]=$x
 dict[3]=$y
 dict[4]=$z
+arr=($w $x $y $z)
 echo "Dictionary value =${dict[*]}"
 
 echo "Array values are"
 for i in "${dict[*]}"
 do
-	arr[$y]=$i
+	array[$y]=$i
 	let y++
 done
-echo "Array=${arr[*]}"
+
+echo ${array[*]}
+
+
+
+for ((i = 0; i<4; i++))
+do
+        for((j = $i; j<4; j++))
+    do
+
+        if [[ ${arr[i]} -lt ${arr[j]} ]]
+        then
+            temp=${arr[i]}
+            arr[i]=${arr[j]}
+            arr[j]=$temp
+        fi
+    done
+done
+echo "Sorted number in Descending order"
+echo ${arr[*]}
