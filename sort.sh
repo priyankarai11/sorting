@@ -21,3 +21,11 @@ dict[2]=$x
 dict[3]=$y
 dict[4]=$z
 echo "Dictionary value =${dict[*]}"
+
+echo "Array values are"
+for i in "${dict[*]}"
+do
+	arr[$y]=$i
+	let y++
+done
+echo "Array=${arr[*]}"
