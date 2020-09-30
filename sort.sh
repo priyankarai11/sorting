@@ -6,4 +6,6 @@ w=$((a+(b*c)))
 echo "Answer for first formula =$w"
 x=$(((a*b)+c))
 echo "Answer for second formula =$x"
+y=$((c+(a/b)))
+echo "Answer for third formula =$y"
 
